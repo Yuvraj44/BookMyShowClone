@@ -1,0 +1,189 @@
+const movies = [
+  {
+    "movieId": 1,
+    "title": "Spirited Away",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhcxBy7msWBIrxRvKnczoXV61Vd6kqP5H2Kh3m2U8MMG15JIj",
+    "genre": "Anime",
+    "duration": "125 min",
+    "description": "A girl gets trapped in a magical world and must work in a bathhouse to save her parents."
+  },
+  {
+    "movieId": 2,
+    "title": "Your Name",
+    "imageUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAiZvKRxC1SGGjIWatn-e4q8nkOAQsWosElu6LPj8rBK8cwpKo",
+    "genre": "Anime",
+    "duration": "107 min",
+    "description": "Two strangers mysteriously switch bodies and try to find each other across time."
+  },
+  {
+    "movieId": 3,
+    "title": "A Silent Voice",
+    "imageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0OwMbIC568ypKPmgxuoXAJ-sdwVKz2dmQ2dnko7GMjN5cS5Hp",
+    "genre": "Anime",
+    "duration": "130 min",
+    "description": "A former bully seeks redemption by reconnecting with the deaf girl he once tormented."
+  },
+  {
+    "movieId": 4,
+    "title": "Grave of the Fireflies",
+    "imageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrNYvGSEWxLNRmHEAE3Vn2mSh1QNyA8IYB25naB_A3dbAHL-3t",
+    "genre": "Anime",
+    "duration": "89 min",
+    "description": "Two orphaned siblings struggle to survive in Japan during World War II."
+  },
+  {
+    "movieId": 5,
+    "title": "Princess Mononoke",
+    "imageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbqVL4B03zEmSg1TDn0v14s4n89fXp3qr0Mr9vsc-daxtrNF2F",
+    "genre": "Anime",
+    "duration": "133 min",
+    "description": "A prince caught in a war between nature spirits and humans seeks to bring peace."
+  },
+  {
+    "movieId": 6,
+    "title": "Akira",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp-0mWpm8jitc5d06x23Y1zpgcX-vDfoifsWYsFT5U4DyMouOm",
+    "genre": "Anime",
+    "duration": "124 min",
+    "description": "In a cyberpunk Tokyo, a biker gains telekinetic powers, leading to chaos."
+  },
+  {
+    "movieId": 7,
+    "title": "Howl’s Moving Castle",
+    "imageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHjU6f5PEQ4fje1Ex5mWPdK4iD7dJyshFSp9-81nuhQH4_1TezqWHBW4qpYIexIBovrQnCJA",
+    "genre": "Anime",
+    "duration": "119 min",
+    "description": "A young woman, cursed to be old, finds love and adventure with a mysterious wizard."
+  },
+  {
+    "movieId": 8,
+    "title": "Weathering With You",
+    "imageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlbwVOjfGhVyjNDS6bX4iLfx2aJpcohnS3kCFhwCFciXLetOW2",
+    "genre": "Anime",
+    "duration": "112 min",
+    "description": "A boy meets a girl who can control the weather, changing both of their lives forever."
+  },
+  {
+
+    "movieId": 9,
+    "title": "Demon SLayer",
+    "imageUrl": "https://i.pinimg.com/736x/db/88/3f/db883fbccee88bca91180c4b952b2dab.jpg",
+    "genre": "Anime",
+    "duration": "132 min",
+    "description": "A skilled swordsman is given a chance to save his sister."
+  }
+  ,
+  {
+    "movieId": 10,
+    "title": "The Tale of the Princess Kaguya",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp3Z-QmhG9-Mw7VGkjT8p5Vewn5ehiX4YsNVi17Q-CqBnST3X-",
+    "genre": "Anime",
+    "duration": "137 min",
+    "description": "A girl born from a bamboo stalk discovers her celestial origins."
+  },
+  {
+    "movieId": 11,
+    "title": "The Conjuring",
+    "imageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTom_YFyhdPL_hw7a4QxB75uy9RNUGdRIDqieXM_1vm29zo0Id",
+    "genre": "Horror",
+    "duration": "112 min",
+    "description": "Paranormal investigators work to help a family terrorized by a dark presence."
+  },
+  {
+    "movieId": 12,
+    "title": "It",
+    "imageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR85LN9z4x-YvR1ynm6UpMbwvphrIjglUteb4G5DkjvckeUHBXf",
+    "genre": "Horror",
+    "duration": "135 min",
+    "description": "A group of kids face their worst fears when an ancient evil resurfaces in their town."
+  },
+  {
+    "movieId": 13,
+    "title": "Hereditary",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlJIUhv4RZd0fNTupY1giO2q8MoL1_57LAZfwaRJefzefWdQ_",
+    "genre": "Horror",
+    "duration": "127 min",
+    "description": "A grieving family unravels terrifying secrets about their ancestry."
+  },
+  {
+    "movieId": 14,
+    "title": "The Exorcist",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-wlMrPUUv1_frvrKl-Sd-UKskif_kcM4GnrWk-yuq9lCcgHsO",
+    "genre": "Horror",
+    "duration": "122 min",
+    "description": "A mother seeks the help of priests when her daughter is possessed by a demonic force."
+  },
+  {
+    "movieId": 15,
+    "title": "A Nightmare on Elm Street",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST4xpXvPD_bMlWaXhyiS-ns_w27LmN29qNKZAf-sinaSqIMx5-",
+    "genre": "Horror",
+    "duration": "91 min",
+    "description": "A monstrous spirit haunts teenagers in their dreams, leading to terrifying consequences."
+  },
+ {
+    "movieId": 16,
+    "title": "Crazy Rich Asians",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/ba/Crazy_Rich_Asians_poster.png",
+    "genre": "RomCom",
+    "duration": "120 min",
+    "description": "A woman discovers her boyfriend is from one of the richest families in Singapore."
+  },
+  {
+    "movieId": 17,
+    "title": "10 Things I Hate About You",
+    "imageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnqgecWwjEgNpZJVbM_9T89dFuNZQa3sD3d7rCoza-7cTFjfdp",
+    "genre": "RomCom",
+    "duration": "97 min",
+    "description": "A high school romance based on Shakespeare's 'The Taming of the Shrew'."
+  },
+  {
+    "movieId": 18,
+    "title": "Notting Hill",
+    "imageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0X1Eg4ETkMAZdPMTU0DKdOCoXs0pTQNsoELZgFpxGhcO5uBYB",
+    "genre": "RomCom",
+    "duration": "124 min",
+    "description": "A bookshop owner falls in love with a famous Hollywood actress."
+  },
+  {
+    "movieId": 19,
+    "title": "The Proposal",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2HYKfi0RkVIix5flfIHiB4g3I4VlVWOvwWjbszBzQak-Kpse5",
+    "genre": "RomCom",
+    "duration": "108 min",
+    "description": "A Canadian executive fakes an engagement with her assistant to avoid deportation."
+
+  },
+  {
+    "movieId": 20,
+    "title": "Love Actually",
+    "imageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFzvfL9IIDqVg9q1_ddrB7gXDK9cVI_XEY9UqMQTnaVxZUAzL4",
+    "genre": "RomCom",
+    "duration": "135 min",
+    "description": "Multiple love stories intertwine in the weeks leading up to Christmas."
+  }
+
+];
+
+[
+  {"showId": 1, "movieId": 4, "cinemaHall": "INOX, Garuda Mall, MG Road, Bangalore", "date": "2025-03-24", "timing": "3:00 PM", "availableSeats": 14, "price": 200},
+  {"showId": 2, "movieId": 6, "cinemaHall": "PVR, Forum Mall, Koramangala, Bangalore", "date": "2025-03-25", "timing": "9:00 PM", "availableSeats": 42, "price": 300},
+  {"showId": 3, "movieId": 1, "cinemaHall": "Cinepolis, Royal Meenakshi Mall, Bannerghatta Road, Bangalore", "date": "2025-03-26", "timing": "6:30 PM", "availableSeats": 43, "price": 250},
+  {"showId": 4, "movieId": 1, "cinemaHall": "PVR, Vega City Mall, Bannerghatta Road, Bangalore", "date": "2025-03-25", "timing": "8:00 PM", "availableSeats": 6, "price": 250},
+  {"showId": 5, "movieId": 7, "cinemaHall": "INOX, Mantri Square Mall, Malleswaram, Bangalore", "date": "2025-03-24", "timing": "9:00 PM", "availableSeats": 38, "price": 300},
+  {"showId": 6, "movieId": 8, "cinemaHall": "PVR, Orion Mall, Rajajinagar, Bangalore", "date": "2025-03-26", "timing": "12:00 PM", "availableSeats": 13, "price": 200},
+  {"showId": 7, "movieId": 1, "cinemaHall": "Cinepolis, ETA Mall, Binnipete, Bangalore", "date": "2025-03-24", "timing": "5:00 PM", "availableSeats": 21, "price": 200},
+  {"showId": 8, "movieId": 1, "cinemaHall": "PVR, Elements Mall, Thanisandra, Bangalore", "date": "2025-03-25", "timing": "7:00 PM", "availableSeats": 37, "price": 250},
+  {"showId": 9, "movieId": 10, "cinemaHall": "INOX, Central Mall, Bellandur, Bangalore", "date": "2025-03-24", "timing": "1:00 PM", "availableSeats": 11, "price": 200},
+  {"showId": 10, "movieId": 8, "cinemaHall": "Cinepolis, Brookfield Mall, Whitefield, Bangalore", "date": "2025-03-26", "timing": "10:00 AM", "availableSeats": 34, "price": 250},
+  {"showId": 11, "movieId": 7, "cinemaHall": "PVR, VR Mall, Whitefield, Bangalore", "date": "2025-03-25", "timing": "6:30 PM", "availableSeats": 41, "price": 300},
+  {"showId": 12, "movieId": 1, "cinemaHall": "INOX, Orion East Mall, Banaswadi, Bangalore", "date": "2025-03-24", "timing": "4:30 PM", "availableSeats": 22, "price": 200},
+  {"showId": 13, "movieId": 7, "cinemaHall": "Cinepolis, Sarath City Capital Mall, Marathahalli, Bangalore", "date": "2025-03-26", "timing": "8:00 PM", "availableSeats": 7, "price": 300},
+  {"showId": 14, "movieId": 1, "cinemaHall": "PVR, Gopalan Arcade Mall, Rajarajeshwari Nagar, Bangalore", "date": "2025-03-25", "timing": "9:30 PM", "availableSeats": 19, "price": 200},
+  {"showId": 15, "movieId": 1, "cinemaHall": "INOX, UB City, Ashok Nagar, Bangalore", "date": "2025-03-26", "timing": "11:00 AM", "availableSeats": 28, "price": 250},
+  {"showId": 16, "movieId": 8, "cinemaHall": "PVR, Park Square Mall, Whitefield, Bangalore", "date": "2025-03-24", "timing": "7:45 PM", "availableSeats": 18, "price": 250},
+  {"showId": 17, "movieId": 10, "cinemaHall": "Cinepolis, Phoenix Marketcity, Mahadevapura, Bangalore", "date": "2025-03-25", "timing": "3:15 PM", "availableSeats": 35, "price": 250},
+  {"showId": 18, "movieId": 1, "cinemaHall": "INOX, Esteem Mall, Hebbal, Bangalore", "date": "2025-03-24", "timing": "2:00 PM", "availableSeats": 43, "price": 300},
+  {"showId": 19, "movieId": 1, "cinemaHall": "PVR, Forum Rex Walk, Brigade Road, Bangalore", "date": "2025-03-26", "timing": "6:00 PM", "availableSeats": 48, "price": 250},
+  {"showId": 20, "movieId": 1, "cinemaHall": "Cinepolis, Lulu Mall, Rajajinagar, Bangalore", "date": "2025-03-25", "timing": "12:30 PM", "availableSeats": 43, "price": 250}
+]

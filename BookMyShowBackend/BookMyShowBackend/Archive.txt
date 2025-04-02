@@ -1,0 +1,27 @@
+//When using 1 to many relation
+[HttpGet("{movieId}/shows")]
+public async Task<ActionResult<Movie>> GetMovieWithShowsWithNavigation(int movieId)
+{
+    var movie = await _context.Movies
+                              .Include(m => m.Shows) 
+                              .FirstOrDefaultAsync(m => m.MovieId == movieId);
+
+    if (movie == null)
+        return NotFound(new { message = "Movie not found" });
+
+    return Ok(movie);
+}
+
+//Without relation
+{
+        var shows = await _context.Shows
+                                  .Where(s => s.MovieId == movieId)
+                                  .ToListAsync();
+
+        if (!shows.Any())
+        {
+            return NotFound(new { message = "No shows found for this movie." });
+        }
+
+        return Ok(shows);
+    }
