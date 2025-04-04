@@ -18,7 +18,7 @@ namespace BookMyShowBackend.Controllers
             _context = context;
         }
 
-
+        //---------------------------------------------------------------------------------------------
 
         [HttpGet("movies")]
         public async Task<IActionResult> GetAllMovies([FromQuery] string? genre)
@@ -137,7 +137,7 @@ namespace BookMyShowBackend.Controllers
 
 
 
-
+        //-------------------------------------------------------------------------------------------
 
         [HttpGet("movies/slots/{id}")]
         public async Task<IActionResult> GetShows(int id)
@@ -163,6 +163,30 @@ namespace BookMyShowBackend.Controllers
 
         }
 
+        [HttpGet("slots")]
+        public async Task<IActionResult> GetAllShows()
+        {
+            try
+            {
+
+                var shows = await _context.ShowsList
+                                  .ToListAsync();
+
+
+                return Ok(shows);
+            }
+            catch (SqlException ex)
+            {
+                return StatusCode(500, $"SQL Server issue (Check Connection String): {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Unexpected error: {ex.Message}");
+            }
+
+        }
+
+
         [HttpPost("movies/slots/create")]
         public async Task<IActionResult> CreateShow(ShowsDTO showDto)
         {
@@ -170,7 +194,6 @@ namespace BookMyShowBackend.Controllers
             {
                 var show = new Shows
                 {
-                    ShowId = showDto.ShowId,
                     MovieId = showDto.MovieId,
                     CinemaHall = showDto.CinemaHall,
                     Date = showDto.Date,
@@ -185,15 +208,21 @@ namespace BookMyShowBackend.Controllers
             }
             catch (Exception ex)
             {
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine($"Inner Exception: {ex.InnerException.Message}");
+                }
                 return StatusCode(500, $"Unexpected error: {ex.Message}");
             }
         }
 
         [HttpPut("movies/slots/update/{id}")]
-        public async Task<IActionResult> UpdateShow(int id, Shows updatedShow)
+        public async Task<IActionResult> UpdateShow(int id, ShowsDTO updatedShow)
         {
             var show = await _context.ShowsList.FindAsync(id);
-            if (show == null) return NotFound("Show not found");
+
+            if (show == null)
+                return NotFound("Show not found");
 
             show.MovieId = updatedShow.MovieId;
             show.CinemaHall = updatedShow.CinemaHall;
@@ -218,7 +247,7 @@ namespace BookMyShowBackend.Controllers
             return Ok("Show deleted successfully");
         }
 
-
+        //----------------------------------------------------------------------------------------
 
         [HttpGet("users/{id}")]
         public async Task<IActionResult> GetUserById(int id)
@@ -289,14 +318,45 @@ namespace BookMyShowBackend.Controllers
                 Email = dto.Email,
                 Password = dto.Password,
                 Picture = dto.Picture,
-                IsAdmin = dto.IsAdmin
+                IsAdmin = false
             };
 
             _context.UsersList.Add(user);
             await _context.SaveChangesAsync();
 
-            return Ok("User registered successfully.");
+            return Ok(new { message = "User registered successfully." });
         }
+
+        [HttpPost("/toogleAdmin/{id}")]
+        public async Task<ActionResult> UpdateAdmin(int id)
+        {
+            var user = await _context.UsersList.FindAsync(id);
+            
+            if (user == null)
+                return NotFound("User not found.");
+
+            user.IsAdmin = !user.IsAdmin;
+            await _context.SaveChangesAsync();
+
+            return Ok("User role updated successfully.");
+        }
+
+        [HttpDelete("/delete/{id}")]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            var user = await _context.UsersList.FindAsync(id);
+            
+            if (user == null)
+                return NotFound("User not found.");
+
+            _context.UsersList.Remove(user);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "User registered successfully." });
+
+        }
+
+        //---------------------------------------------------------------------------
 
         [HttpPost("ticket")]
         public async Task<IActionResult> CreateBooking([FromBody] TicketDTO request)

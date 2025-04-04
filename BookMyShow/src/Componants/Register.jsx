@@ -15,7 +15,7 @@ export default function Register() {
     const { name, type, checked, value } = e.target;
     setFormData({
       ...formData,
-      [name]: type === "checkbox" ? checked : value,
+      [name]: value,
     });
   };
 
@@ -36,7 +36,7 @@ export default function Register() {
       if (response.ok) {
         alert("User registered successfully.");
         // Redirect to login or another page
-        navigate("/login");
+        navigate("/");
       } else {
         alert(data || "Registration failed.");
       }
@@ -104,17 +104,7 @@ export default function Register() {
               style={styles.input}
             />
           </div>
-          <div style={styles.fieldCheckbox}>
-            <input
-              id="isAdmin"
-              name="isAdmin"
-              type="checkbox"
-              checked={formData.isAdmin}
-              onChange={handleChange}
-              style={styles.checkbox}
-            />
-            <label htmlFor="isAdmin" style={styles.checkboxLabel}>Is Admin</label>
-          </div>
+          
           <button type="submit" style={styles.button}>
             Register
           </button>

@@ -17,10 +17,10 @@ namespace BookMyShowBackend.Models
         public string CinemaHall { get; set; }
 
         [Required]
-        public DateTime Date { get; set; }
+        public string Date { get; set; }
 
         [Required]
-        public TimeSpan Timing { get; set; }
+        public string Timing { get; set; }
 
         [Required]
         public int AvailableSeats { get; set; }

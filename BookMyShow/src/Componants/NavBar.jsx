@@ -26,7 +26,9 @@ function NavBar() {
 
                         {user?.isAdmin && (
                             <NavDropdown title="Admin" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/api/admin/addmovie">Add Movie</NavDropdown.Item>
+                                <NavDropdown.Item href="/api/movie/create">Add Movie</NavDropdown.Item>
+                                <NavDropdown.Item href="/api/movie/edit">Edit Movie</NavDropdown.Item>
+                                <NavDropdown.Item href="/api/user">Manage Admin Access</NavDropdown.Item>
                             </NavDropdown>
                         )}
                     </Nav>

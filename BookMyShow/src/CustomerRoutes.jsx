@@ -7,8 +7,10 @@ import LogInPage from "./Pages/LogInPage";
 import RegisterPage from "./Pages/RegisterPage";
 import Ticket from "./Componants/Ticket";
 import HistoryPage from "./Pages/HistoryPage";
-import Profile from "./Componants/Profile";
 import ProfilePage from "./Pages/ProfilePage";
+import CreateMoviePage from "./Pages/CreateMoviePage"
+import EditMoviePage from "./Pages/EditMoviePage";
+import UserAdminPage from "./Pages/UserAdminPage";
 
 const CustomerRoutes = () => {
     return (
@@ -22,9 +24,13 @@ const CustomerRoutes = () => {
             <Route path="/api/logout" element={<LogInPage />} /> 
             <Route path="/api/booking" element={<HistoryPage />} /> 
             <Route path="/api/profile" element={<ProfilePage />} /> 
-            <Route path="*" element={<HomePage />} /> 
+            <Route path="/api/movie/create" element={<CreateMoviePage />} /> 
+            <Route path="/api/movie/edit" element={<EditMoviePage />} /> 
+            <Route path="/api/user" element={<UserAdminPage />} /> 
+            <Route path="*" element={<LogInPage/>} /> 
         </Routes>
     );
 };
+
 
 export default CustomerRoutes;

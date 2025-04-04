@@ -184,7 +184,7 @@
       },
       {
         "Name": "updatedShow",
-        "Type": "BookMyShowBackend.Models.Shows",
+        "Type": "BookMyShowBackend.DTO.ShowsDTO",
         "IsRequired": true
       }
     ],
@@ -229,6 +229,16 @@
   },
   {
     "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "Method": "GetAllShows",
+    "RelativePath": "api/slots",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
     "Method": "CreateBooking",
     "RelativePath": "api/ticket",
     "HttpMethod": "POST",
@@ -258,6 +268,58 @@
     "Method": "GetUserById",
     "RelativePath": "api/users/{id}",
     "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookMyShowBackend.Controllers.AuthController",
+    "Method": "Index",
+    "RelativePath": "auth/login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "Method": "DeleteUser",
+    "RelativePath": "delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "Method": "UpdateAdmin",
+    "RelativePath": "toogleAdmin/{id}",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [

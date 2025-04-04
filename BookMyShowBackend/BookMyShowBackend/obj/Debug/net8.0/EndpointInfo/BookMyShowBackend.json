@@ -5,6 +5,35 @@
     "version": "1.0"
   },
   "paths": {
+    "/auth/login": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/movies": {
       "get": {
         "tags": [
@@ -168,6 +197,18 @@
         }
       }
     },
+    "/api/slots": {
+      "get": {
+        "tags": [
+          "BookMyShow"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/movies/slots/create": {
       "post": {
         "tags": [
@@ -219,17 +260,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Shows"
+                "$ref": "#/components/schemas/ShowsDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Shows"
+                "$ref": "#/components/schemas/ShowsDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Shows"
+                "$ref": "#/components/schemas/ShowsDTO"
               }
             }
           }
@@ -354,6 +395,52 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/toogleAdmin/{id}": {
+      "post": {
+        "tags": [
+          "BookMyShow"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/delete/{id}": {
+      "delete": {
+        "tags": [
+          "BookMyShow"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -507,57 +594,9 @@
         },
         "additionalProperties": false
       },
-      "Shows": {
-        "required": [
-          "availableSeats",
-          "cinemaHall",
-          "date",
-          "price",
-          "timing"
-        ],
-        "type": "object",
-        "properties": {
-          "showId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "movieId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "movie": {
-            "$ref": "#/components/schemas/Movie"
-          },
-          "cinemaHall": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "date": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "timing": {
-            "type": "string",
-            "format": "date-span"
-          },
-          "availableSeats": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "price": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
       "ShowsDTO": {
         "type": "object",
         "properties": {
-          "showId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "movieId": {
             "type": "integer",
             "format": "int32"
@@ -568,11 +607,11 @@
           },
           "date": {
             "type": "string",
-            "format": "date-time"
+            "nullable": true
           },
           "timing": {
             "type": "string",
-            "format": "date-span"
+            "nullable": true
           },
           "availableSeats": {
             "type": "integer",
