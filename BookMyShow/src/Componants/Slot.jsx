@@ -14,13 +14,7 @@ const Slot = ({ slot }) => {
     return new Date(dateString).toLocaleDateString("en-US", options);
   };
 
-  const formatTime = (timeString) => {
-    const [hours, minutes] = timeString.split(":");
-    const hour = parseInt(hours, 10);
-    const ampm = hour >= 12 ? "PM" : "AM";
-    const formattedHour = hour % 12 || 12;
-    return `${formattedHour}:${minutes} ${ampm}`;
-  };
+  
 
   return (
     <>
@@ -50,7 +44,7 @@ const Slot = ({ slot }) => {
             color: "#555"
           }}>
             {formatDate(slot.date)} <br />
-            {formatTime(slot.timing)} <br />
+            {slot.timing} <br />
           </Card.Text>
 
           <Button

@@ -18,11 +18,13 @@ const AddSlotModal = ({ show, handleClose, movieId }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
+            const token = localStorage.getItem("token");
             const response = await fetch("https://localhost:44316/api/movies/slots/create", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}`,},
                 body: JSON.stringify(slotData),
             });
+            
 
             if (response.ok) {
                 alert("Slot added successfully!");

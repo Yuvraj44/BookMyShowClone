@@ -22,10 +22,11 @@ export default function CreateMovie() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      const token = localStorage.getItem("token");
       console.log("Creating movie...");
       const response = await fetch("https://localhost:44316/api/movies/create", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json",  Authorization: `Bearer ${token}` },
         body: JSON.stringify(formData),
       });
       const data = await response.json();
@@ -34,7 +35,7 @@ export default function CreateMovie() {
         alert("Movie created successfully.");
         navigate("/api/home");
       } else {
-        alert(data || "Movie creation failed.");
+        alert("Movie creation failed.");
       }
     } catch (error) {
       console.error("Error:", error);

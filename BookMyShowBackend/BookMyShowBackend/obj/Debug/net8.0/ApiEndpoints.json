@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/auth/login",
     "HttpMethod": "POST",
@@ -16,7 +16,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.AuthController",
     "Method": "Register",
     "RelativePath": "api/auth/register",
     "HttpMethod": "POST",
@@ -32,7 +32,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.BookingController",
     "Method": "GetAllBookings",
     "RelativePath": "api/bookings",
     "HttpMethod": "GET",
@@ -42,7 +42,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.BookingController",
     "Method": "GetBookingsById",
     "RelativePath": "api/bookings/{id}",
     "HttpMethod": "GET",
@@ -58,7 +58,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.MovieController",
     "Method": "GetAllMovies",
     "RelativePath": "api/movies",
     "HttpMethod": "GET",
@@ -74,7 +74,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.MovieController",
     "Method": "GetMovieById",
     "RelativePath": "api/movies/{id}",
     "HttpMethod": "GET",
@@ -90,7 +90,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.MovieController",
     "Method": "CreateMovie",
     "RelativePath": "api/movies/create",
     "HttpMethod": "POST",
@@ -106,7 +106,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.MovieController",
     "Method": "DeleteMovie",
     "RelativePath": "api/movies/delete/{id}",
     "HttpMethod": "DELETE",
@@ -122,7 +122,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.SlotController",
     "Method": "DeleteShow",
     "RelativePath": "api/movies/slot/delete/{id}",
     "HttpMethod": "DELETE",
@@ -138,8 +138,8 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
-    "Method": "GetShows",
+    "ContainingType": "BookMyShowBackend.Controllers.SlotController",
+    "Method": "GetShowsByMovieId",
     "RelativePath": "api/movies/slots/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -154,7 +154,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.SlotController",
     "Method": "CreateShow",
     "RelativePath": "api/movies/slots/create",
     "HttpMethod": "POST",
@@ -170,7 +170,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.SlotController",
     "Method": "UpdateShow",
     "RelativePath": "api/movies/slots/update/{id}",
     "HttpMethod": "PUT",
@@ -191,7 +191,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.MovieController",
     "Method": "UpdateMovie",
     "RelativePath": "api/movies/update/{id}",
     "HttpMethod": "PUT",
@@ -212,7 +212,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.SlotController",
     "Method": "GetSlotById",
     "RelativePath": "api/slot/{id}",
     "HttpMethod": "GET",
@@ -228,7 +228,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.SlotController",
     "Method": "GetAllShows",
     "RelativePath": "api/slots",
     "HttpMethod": "GET",
@@ -238,7 +238,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.BookingController",
     "Method": "CreateBooking",
     "RelativePath": "api/ticket",
     "HttpMethod": "POST",
@@ -254,7 +254,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.AuthController",
     "Method": "GetAllUsers",
     "RelativePath": "api/users",
     "HttpMethod": "GET",
@@ -264,7 +264,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.AuthController",
     "Method": "GetUserById",
     "RelativePath": "api/users/{id}",
     "HttpMethod": "GET",
@@ -281,26 +281,6 @@
   },
   {
     "ContainingType": "BookMyShowBackend.Controllers.AuthController",
-    "Method": "Index",
-    "RelativePath": "auth/login",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
     "Method": "DeleteUser",
     "RelativePath": "delete/{id}",
     "HttpMethod": "DELETE",
@@ -316,7 +296,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookMyShowBackend.Controllers.BookMyShowController",
+    "ContainingType": "BookMyShowBackend.Controllers.AuthController",
     "Method": "UpdateAdmin",
     "RelativePath": "toogleAdmin/{id}",
     "HttpMethod": "POST",

@@ -18,9 +18,10 @@ const Seats = ({ slot, show, handleClose }) => {
     };
 
     try {
+      const token = localStorage.getItem("token");
       const response = await fetch("https://localhost:44316/api/ticket", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json",  Authorization: `Bearer ${token}` },
         body: JSON.stringify(payload),
       });
 

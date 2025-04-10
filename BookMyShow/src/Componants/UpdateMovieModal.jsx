@@ -10,9 +10,11 @@ const UpdateMovieModal = ({ show, handleClose, movie }) => {
 
     const handleUpdate = async () => {
         try {
+            const token = localStorage.getItem("token");
+            
             const response = await fetch(`https://localhost:44316/api/movies/update/${movie.movieId}`, {
                 method: "PUT",
-                headers: { "Content-Type": "application/json" },
+                headers: { "Content-Type": "application/json",  Authorization: `Bearer ${token}` },
                 body: JSON.stringify(updatedMovie),
             });
             if (response.ok) {

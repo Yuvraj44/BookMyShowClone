@@ -14,10 +14,7 @@ namespace BookMyShowBackend
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            modelBuilder.Entity<Movie>()
-    .Property(m => m.MovieId)
-    .ValueGeneratedOnAdd(); // Enables auto-increment
-
+            modelBuilder.Entity<Movie>().Property(m => m.MovieId).ValueGeneratedOnAdd(); 
 
             modelBuilder.Entity<Shows>().ToTable("ShowsList");
             modelBuilder.Entity<Users>().ToTable("UsersList");

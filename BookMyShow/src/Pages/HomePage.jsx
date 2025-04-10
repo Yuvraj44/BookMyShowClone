@@ -19,7 +19,15 @@ const HomePage = () => {
     {
       try 
       {
-        const response = await fetch(`https://localhost:44316/api/movies?genre=${genre}`);
+        const token = localStorage.getItem("token");
+        const response = await fetch(`https://localhost:44316/api/movies?genre=${genre}`
+        , {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        });
+        
         const data = await response.json();
         setMovies((prev) => ({ ...prev, [genre]: data }));// prev is the current state; Keep the stae normal(...prev); genre:data=new change
       }

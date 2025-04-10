@@ -38,7 +38,7 @@ function NavBar() {
                     <NavDropdown
                         title={
                             <Image
-                                src={user?.picture || "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D"}
+                                src={user?.picture || "https://media.istockphoto.com/id/517998264/vector/male-user-icon.jpg?s=612x612&w=0&k=20&c=4RMhqIXcJMcFkRJPq6K8h7ozuUoZhPwKniEke6KYa_k="}
                                 roundedCircle
                                 style={{ width: '50px', height: '50px' }}
                             />

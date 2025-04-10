@@ -7,11 +7,13 @@ export default function LogIn() {
     password: "",
   });
 
-  const navigate = useNavigate();
+  
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,10 +29,13 @@ export default function LogIn() {
       const data = await response.json();
       console.log("Response Data:", data);
 
-      if (data.success) {
+      if (response.ok && data.token) {
         alert("Logged IN");
+        localStorage.setItem("token", data.token);
         localStorage.setItem("user", JSON.stringify(data.user));
         navigate("/api/home");
+      } else {
+        alert("Login failed");
       }
     } catch (error) {
       console.error("Error:", error);

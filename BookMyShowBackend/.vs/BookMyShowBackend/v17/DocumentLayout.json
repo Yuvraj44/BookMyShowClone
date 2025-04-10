@@ -3,69 +3,51 @@
   "WorkspaceRootPath": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\controllers\\bookmyshowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\controllers\\bookmyshowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\bookmyshowcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\bookmyshowcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\dto\\showsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\dto\\showsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\models\\shows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\models\\shows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\controllers\\slotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\controllers\\slotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|c:\\users\\hello\\downloads\\desktop\\bookmyshow\\bookmyshowbackend\\bookmyshowbackend\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B390210-13DB-4AD1-9D2A-876FF2E8546E}|BookMyShowBackend\\BookMyShowBackend.csproj|solutionrelative:bookmyshowbackend\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "DockedHeight": 277,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Movie.cs",
-              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Models\\Movie.cs",
-              "RelativeDocumentMoniker": "BookMyShowBackend\\Models\\Movie.cs",
-              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Models\\Movie.cs",
-              "RelativeToolTip": "BookMyShowBackend\\Models\\Movie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvyEAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T04:58:10.499Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ShowsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\DTO\\ShowsDTO.cs",
-              "RelativeDocumentMoniker": "BookMyShowBackend\\DTO\\ShowsDTO.cs",
-              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\DTO\\ShowsDTO.cs",
-              "RelativeToolTip": "BookMyShowBackend\\DTO\\ShowsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T05:56:13.38Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -73,66 +55,122 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "BookMyShowBackend\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "BookMyShowBackend\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAAAAAAAAAAAAA==",
+              "Title": "BookMyShowContext.cs",
+              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\BookMyShowContext.cs",
+              "RelativeDocumentMoniker": "BookMyShowBackend\\BookMyShowContext.cs",
+              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\BookMyShowContext.cs",
+              "RelativeToolTip": "BookMyShowBackend\\BookMyShowContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T01:40:28.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Program.cs",
-              "RelativeDocumentMoniker": "BookMyShowBackend\\Program.cs",
-              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Program.cs",
-              "RelativeToolTip": "BookMyShowBackend\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T01:40:01.283Z",
+              "WhenOpened": "2025-04-09T04:06:10.809Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookMyShowController.cs",
-              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\BookMyShowController.cs",
-              "RelativeDocumentMoniker": "BookMyShowBackend\\Controllers\\BookMyShowController.cs",
-              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\BookMyShowController.cs",
-              "RelativeToolTip": "BookMyShowBackend\\Controllers\\BookMyShowController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T04:51:22.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Models\\Users.cs",
               "RelativeDocumentMoniker": "BookMyShowBackend\\Models\\Users.cs",
               "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Models\\Users.cs",
               "RelativeToolTip": "BookMyShowBackend\\Models\\Users.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBgAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T01:07:35.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:59:03.464Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Shows.cs",
-              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Models\\Shows.cs",
-              "RelativeDocumentMoniker": "BookMyShowBackend\\Models\\Shows.cs",
-              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Models\\Shows.cs",
-              "RelativeToolTip": "BookMyShowBackend\\Models\\Shows.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBMAAAAVAAAAAAAAAA==",
+              "Title": "LogInDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\DTO\\LogInDTO.cs",
+              "RelativeDocumentMoniker": "BookMyShowBackend\\DTO\\LogInDTO.cs",
+              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\DTO\\LogInDTO.cs",
+              "RelativeToolTip": "BookMyShowBackend\\DTO\\LogInDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T05:47:35.421Z"
+              "WhenOpened": "2025-04-09T04:29:42.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MovieController.cs",
+              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\MovieController.cs",
+              "RelativeDocumentMoniker": "BookMyShowBackend\\Controllers\\MovieController.cs",
+              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\MovieController.cs",
+              "RelativeToolTip": "BookMyShowBackend\\Controllers\\MovieController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T05:46:10.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "BookMyShowBackend\\appsettings.json",
+              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\appsettings.json",
+              "RelativeToolTip": "BookMyShowBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-07T05:16:51.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "BookMyShowBackend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "BookMyShowBackend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T05:14:49.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Program.cs",
+              "RelativeDocumentMoniker": "BookMyShowBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Program.cs",
+              "RelativeToolTip": "BookMyShowBackend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T05:13:33.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "BookMyShowBackend\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "BookMyShowBackend\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T05:45:59.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SlotController.cs",
+              "DocumentMoniker": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\SlotController.cs",
+              "RelativeDocumentMoniker": "BookMyShowBackend\\Controllers\\SlotController.cs",
+              "ToolTip": "C:\\Users\\hello\\Downloads\\Desktop\\BookMyShow\\BookMyShowBackend\\BookMyShowBackend\\Controllers\\SlotController.cs",
+              "RelativeToolTip": "BookMyShowBackend\\Controllers\\SlotController.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAswJEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T05:46:14.098Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 123,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

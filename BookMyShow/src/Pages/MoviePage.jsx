@@ -6,11 +6,18 @@ import { useState, useEffect } from "react";
 
 const MoviePage = () => {
   const [movies, setMovies] = useState([]);
+  
 
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await fetch("https://localhost:44316/api/movies");
+        const token = localStorage.getItem("token");
+        const response = await fetch("https://localhost:44316/api/movies", {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        });
         const data = await response.json();
         setMovies(data);
       } catch (error) {

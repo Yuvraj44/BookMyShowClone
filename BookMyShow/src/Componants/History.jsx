@@ -11,7 +11,16 @@ const History = () => {
     const fetchBookings = async () => {
       try {
         const user = JSON.parse(localStorage.getItem("user"));
-        const response = await fetch(`https://localhost:44316/api/bookings/${user?.userId}`);
+        const token = localStorage.getItem("token");
+
+        const response = await fetch(`https://localhost:44316/api/bookings/${user?.userId}`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`
+          }
+        });
+        
         if (response.ok) {
           const data = await response.json();
           setBookings(data);
@@ -40,7 +49,16 @@ const History = () => {
 
   const fetchSlotDetails = async (slotId) => {
     try {
-      const response = await fetch(`https://localhost:44316/api/slot/${slotId}`);
+      const token = localStorage.getItem("token");
+      const response = await fetch(`https://localhost:44316/api/slot/${slotId}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`
+        }
+      });
+      
+      
       if (response.ok) {
         const data = await response.json();
         setSelectedSlot(data);
