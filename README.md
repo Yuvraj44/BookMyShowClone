@@ -373,7 +373,7 @@ Response:
 
 }
 
-**PUT /api/movies/slots/update/{slotId}**
+## PUT /api/movies/slots/update/{slotId}
 
 Description: Update a movie slot by slot ID  
 Authorization: Admin required
@@ -406,7 +406,7 @@ Response:
 
 }
 
-**DELETE /api/movies/slot/delete/{slotId}**
+## DELETE /api/movies/slot/delete/{slotId}
 
 Description: Delete a slot by slot ID  
 Authorization: Admin required
